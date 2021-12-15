@@ -1,0 +1,58 @@
+<!-- this is a structure of Bootstrap Modal -->
+<div class="modal fade" id="restaurantModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="height:700px; width: 780px;">
+            <div class="modal-header text-center" style="background-color: #1C0606;">
+                <h4 class="modal-title text-light" id="restaurantTitle">Modal title</h4>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row text-center">
+                    <div class="col-xs-5">
+                        <img id="pic1" width="250" height="180">
+                    </div>
+                    <div class="col-xs-7">
+                        <table class="table table-sm">
+                            <tr>
+                                <td style=" font-family: 'Times New Roman', Times, serif;"><b>Cuisine</b></td>
+                                <td id="cuisine" style=" font-family: 'Times New Roman', Times, serif;"></td>
+                            </tr>
+                            <tr>
+                                <td style=" font-family: 'Times New Roman', Times, serif;"><b>Rating</b></td>
+                                <td id="rating" style="font-family: 'Times New Roman', Times, serif; width: 300px; word-wrap: break-word;"></td>
+                            </tr>
+                            <tr>
+                                <td style=" font-family: 'Times New Roman', Times, serif;"><b>Operating Hours</b></td>
+                                <td id="operatinghrs" style=" font-family: 'Times New Roman', Times, serif;"></td>
+                            </tr>
+                            <tr>
+                                <td style=" font-family: 'Times New Roman', Times, serif;"><b>Contact</b></td>
+                                <td id="contact" style=" font-family: 'Times New Roman', Times, serif; width: 300px; word-wrap: break-word;">
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style=" font-family: 'Times New Roman', Times, serif;"><b>Address</b></td>
+                                <td id="addressName" style="font-family: 'Times New Roman', Times, serif; width: 300px; word-wrap: break-word;">
+                                    </p>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="2"><button type="button" class="btn" id="bookingURL" onClick="booking()" style="margin-left: -20px; width: 380px; background-color: #1C0606; color: #D6CABE;">Make A Reservation</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top: -20px; font-family:'Times New Roman', Times, serif;"><b>Description </b>
+                    <p id="description" style="font-family:'Times New Roman', Times, serif;"></p>
+                </div>
+                <div class="col-xs-12 text-center">
+
+                    <img src="" frameborder="0" allowfullscreen id="pic2" style="width: 300px; height: 200px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

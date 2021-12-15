@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-image: url(images/contactbg.jpeg);
+        background-size: 100% 95%;
+        background-repeat: no-repeat;
+    }
+    
+    .form-group input {
+        width: 300px;
+        margin-top: -320px;
+        border: 0;
+        color: grey;
+        border-bottom: 1px solid #555;
+        background: transparent;
+    }
+    
+    .form-group textarea {
+        width: 300px;
+        margin-top: -240px;
+        margin-left: 80px;
+        border: 0;
+        color: grey;
+        border-bottom: 1px solid #555;
+        background: transparent;
+    }
+    
+    .getintouch {
+        position: absolute;
+        top: 75%;
+        left: 65%;
+        font-size: 45px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFF7EB;
+    }
+    
+    .urbandine1 {
+        position: absolute;
+        top: 19%;
+        left: 8%;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        color: #FFF7EB;
+    }
+    
+    .urbandine2 {
+        position: absolute;
+        top: 26%;
+        left: 8%;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #675550;
+    }
+    
+    .urbandine3 {
+        position: absolute;
+        top: 24%;
+        left: 11.5%;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        color: #A38788;
+    }
+    
+    .contacttitle {
+        position: absolute;
+        top: 40%;
+        left: 6%;
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        color: #675550;
+    }
+    
+    .desc {
+        position: absolute;
+        top: 47%;
+        left: 6%;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #675550;
+    }
+</style>
+
+<head>
+    <title>Shiok Restaurant Review</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/email.js"></script>
+
+
+</head>
+
+
+<body>
+    <div w3-include-html="top-nav.html"></div>
+    <div>
+        <img src="images/contact.jpeg" style=" margin-top:10px; margin-left: 40px; height: 520px; width: 500px;">
+
+        <div class="urbandine2">AND</div>
+        <div class="urbandine1">urbán</div>
+        <div class="urbandine3">dine</div>
+        <div class="contacttitle">CONTACT US</div>
+        <div class="getintouch">GET IN TOUCH</div>
+        <div class="desc">If you have questions or recommendations, do drop us a message.
+            <br> We'd love to hear from you!</div>
+    </div>
+    <!-- This is the container that holds the initial message, heading, and movies -->
+    <div class="container">
+        <!-- The message will be shown when the page loads and will
+        disappear after the movies are loaded -->
+        <div class="row" id="parent">
+            <form class="col-12" style="color: white;">
+                <br>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" id="email" placeholder="james@email.com">
+                </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="feedback"></label>
+        <textarea class="form-control" id="feedback" placeholder="Write a message.."></textarea>
+    </div>
+    <button type="button" class="btn" onclick="sendEmail()" style="margin-top: -250px; margin-left: 80px; font-weight: 500; background-color: #363131; font-size: 13px; color: white;">SEND MESSAGE</button>
+    </form>
+    </div>
+    </div>
+
+    <div w3-include-html="footer.html "></div>
+</body>
+<script src="js/w3.js "></script>
+<script>
+    //to bring in other HTML on the fly into this page
+    w3.includeHTML();
+</script>
+
+
+</html>

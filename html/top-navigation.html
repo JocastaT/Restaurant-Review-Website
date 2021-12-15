@@ -1,0 +1,63 @@
+<nav class="navbar">
+    <div class="logo" style="margin-top: -20px;">urbándine</div>
+
+
+    <label for="btn" class="icon">
+        <i class="fas fa-bars"></i>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+        <li class="nav-item" id="home" style="margin-left:20px;">
+            <a class="nav-link" href="#" onclick="displayAllRestaurants()">HOME</a>
+        </li>
+
+        <li class="nav-item">
+            <label for="btn-1" class="show">RESTAURANTS</label>
+            <a class="nav-link" href="#">RESTAURANTS</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+                <li><a class="nav-link" href="#" id="fastfoodMenu" onclick="listFastFood()">Fast Food</a></li>
+                <li><a class="nav-link" href="#" id="westernMenu" onclick="listWestern()">Western</a></li>
+                <li><a class="nav-link" href="#" id="koreanMenu" onclick="listKorean()">Korean</a></li>
+                <li><a class="nav-link" href="#" id="japaneseMenu" onclick="listJapanese()">Japanese</a></li>
+                <li><a class="nav-link" href="#" id="chineseMenu" onclick="listChinese()">Chinese</a></li>
+                <li><a class="nav-link" href="#" id="thaiMenu" onclick="listThai()">Thai</a></li>
+            </ul>
+        </li>
+
+
+        <li class="nav-item" id="contactMenu">
+            <a class="nav-link" href="mail.html">CONTACT US</a>
+        </li>
+
+
+
+        <li class="nav-item" id="registerMenu">
+            <a class="nav-link" href="#" id="register" data-toggle="modal" data-target="#registerModal">REGISTER</a>
+        </li>
+        <li class="nav-item" id="loginMenu">
+            <a class="nav-link" href="#" id="login" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+        </li>
+        <li form class="form-inline">
+            <input id="search_input" style="margin-right: -350px; color: white; text-align: left; margin-top: 15px; border-radius: 40px; font-size: 13px; height: 35px; background-color: transparent;" class="input-group-text" type="text" placeholder="Search for Restaurants"
+                aria-label="Search" size="35">
+            <button class="btn btn-outline-default" type="submit" onclick="searchRestaurant()" style="border-radius: 50%; height: 35px; width: 35px; background-color:white;margin-top: 15px; margin-left:315px;  "><i class="fas fa-search" style="margin-left: -4px;"></i></button>
+        </li>
+        <li class="nav-item" id="editMenu" style="display: none;">
+            <a class="nav-link" href="edit.html"><span id="displayUser" ></span></a>
+        </li>
+        <li class="nav-item" id="logoutMenu" style="display: none; ">
+            <a class="nav-link" href="#" id="logout" onclick="logoutMe()"><i class="fa fa-sign-out" style="font-size:24px;color:red"></i></a>
+        </li>
+
+    </ul>
+
+
+
+
+</nav>
+<script>
+    $('.icon').click(function() {
+        $('span').toggleClass("cancel");
+    });
+</script>

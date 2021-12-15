@@ -1,0 +1,81 @@
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="height:560px; width: 700px; margin-left: -200px; background-color: #fff;">
+            <div class="modal-body px-20">
+                <div class="overlay">
+                    <form>
+                        <div>
+                            <img src="images/register-title.png" style="width: 699px; height: 80px; margin-top:-16px; margin-left: -17px;">
+                            <div class="registertitle" style="margin-top: -60px; margin-left: 270px; font-family: Arial, Helvetica, sans-serif ; font-weight: 600; color: #B8ADA2; font-size: 25px;">REGISTER</div>
+                        </div>
+                        <div>
+                            <img src="images/pfp/nopfp.jpg" style="margin-top: 40px; width:100px; margin-left: 25px; border-radius: 50%; " id="targets" />
+                        </div>
+                        <div class="form-group" style="margin-top: -50px; ">
+                            <label for="myinput" class="mt-5" style="font-size: 15px; color: #181818 ; font:bold;">Upload Profile Picture</label>
+                            <input id="myinput" type="file" onchange="encode();" style="display:block !important; font-size: 11px; "></label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="firstName"></label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Eg. Jocasta" style="width: 240px; margin-top: -190px; margin-left: 180px; background-color: #ECECEC; border: 0;">
+                            <small id="emailHelp" class="form-text text-muted" style="margin-left: 180px;">First Name</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName"></label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Eg. Tan" style="width: 200px; margin-top: -206px; margin-left: 450px; background-color: #ECECEC; border: 0;">
+                            <small id="emailHelp" class="form-text text-muted" style="margin-left: 450px;">Last Name</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailAdd"></label>
+                            <input type="email" class="form-control" id="emailAdd" placeholder="Email Address" style="width: 470px; margin-top: -145px; margin-left: 180px; background-color: #ECECEC; border: 0;">
+                            <small id="emailHelp" class="form-text text-muted" style="margin-left: 180px;">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="form-group" style="width:170px; height: 40px; margin-left: 180px; margin-top:-62px; background-color: #ECECEC; border-radius: 1mm; border: 0;">
+                            <label>
+                                <select id="gender" name="gender" style="width:170px; font-size: 15px; height: 40px; background-color: #ECECEC; border-radius: 1mm; border: 0;">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </label>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="mobileNumber"></label>
+                            <input type="number" class="form-control" id="mobileNumber" placeholder="Eg. 91234567" style=" width: 280px; margin-top: -80px; margin-left: 370px; background-color: #ECECEC; border: 0; ">
+                            <small id="emailHelp " class="form-text text-muted " style="margin-left: 370px; ">Mobile Number</small>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="address "></label></label>
+                            <input type="text " class="form-control " id="raddress" placeholder="Address " style="width: 650px; margin-top: -30px; background-color: #ECECEC; border: 0; ">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your address with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username "></label>
+                            <input type="text " class="form-control " id="rusername" placeholder="Example: ilovecdev4ever" style="width:370px; margin-top: -20px; background-color: #ECECEC; border: 0; ">
+                            <small id="emailHelp" class="form-text text-muted">Username</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"></label>
+                            <input type="password" class="form-control " id="rpassword" placeholder="Example: cdevisawesome" style="width:250px; margin-top: -102px;  margin-left: 400px; background-color: #ECECEC; border: 0; ">
+                            <small id="emailHelp" class="form-text text-muted" style="margin-left: 400px; ">Password</small>
+                        </div>
+                        <button onclick="registerMe();" type="button" class="btn btn-primary">Register Now</button>
+                    </form>
+                    <script src="js/w3.js"></script>
+                    <script src="register.js"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
